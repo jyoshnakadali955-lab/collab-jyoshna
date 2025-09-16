@@ -1,7 +1,105 @@
-<html>
-  <head>
-      <body>  
-          <ol>hello world welcome to html programming</ol>
-      </body>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .timetable {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        .timetable th, .timetable td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .timetable th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .timetable td {
+            background-color: #f9f9f9;
+        }
+        .timetable td.empty {
+            background-color: #f0f0f0;
+        }
+        .time-slot {
+            font-weight: bold;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Weekly Timetable</h1>
+
+    <table class="timetable">
+        <thead>
+            <tr>
+                <th>Time / Day</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-slot">08:00 AM - 09:00 AM</td>
+                <td>Math</td>
+                <td>English</td>
+                <td class="empty"></td>
+                <td>Science</td>
+                <td>History</td>
+            </tr>
+            <tr>
+                <td class="time-slot">09:00 AM - 10:00 AM</td>
+                <td>Science</td>
+                <td>History</td>
+                <td>Math</td>
+                <td>English</td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time-slot">10:00 AM - 11:00 AM</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>History</td>
+                <td>Math</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <td class="time-slot">11:00 AM - 12:00 PM</td>
+                <td>History</td>
+                <td>Science</td>
+                <td>English</td>
+                <td class="empty"></td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td class="time-slot">12:00 PM - 01:00 PM</td>
+                <td class="empty"></td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>History</td>
+                <td>English</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
 </html>
